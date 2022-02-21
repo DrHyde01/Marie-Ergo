@@ -1,5 +1,7 @@
 <template>
-  <Tutorial />
+  <div>
+    <h1 class="text-4xl font-poppins">test</h1>
+  </div>
 </template>
 
 <script>
