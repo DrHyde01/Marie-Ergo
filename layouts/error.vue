@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-screen py-20">
     <h1 v-if="error.statusCode === 404">Page introuvable ⚠️</h1>
     <NuxtLink to="/">Retounez à l'accueil</NuxtLink>
   </div>
