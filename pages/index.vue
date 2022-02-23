@@ -2,10 +2,10 @@
   <div class="w-screen mx-auto">
     <div class="md:pt-20">
       <div
-        class="flex flex-wrap items-center justify-between w-full p-24 bg-darkPurple-900"
+        class="flex flex-wrap items-center md:justify-between w-full p-8 md:p-24 bg-darkPurple-900"
       >
-        <div class="flex flex-col flex-start w-1/2 mx-10">
-          <div class="flex items-center">
+        <div class="flex flex-col flex-start md:w-1/2 mx-10">
+          <div class="flex flex-wrap items-center">
             <h1 class="font-poppins text-white text-5xl font-extralight mr-2">
               MARIE
             </h1>

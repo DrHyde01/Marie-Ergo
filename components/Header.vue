@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="hidden sm:flex items-center justify-between h-20 w-full py-4 px-6 fixed inset-x-0 top-0 bg-white"
+      class="hidden sm:flex items-center justify-between h-20 w-full py-4 px-6 fixed inset-x-0 top-0 bg-white border-b"
     >
       <nuxt-link to="/">
         <img src="../assets/hands_bk.png" alt="logo mains" class="h-10 mx-2" />
@@ -31,7 +31,7 @@
 
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
+        class="h-10 w-10 cursor-pointer"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -46,23 +46,32 @@
       </svg>
     </div>
 
-    <nav v-show="menu" class="w-full">
-      <ul class="flex flex-col text-center">
-        <li v-for="(item, index) in items" :key="index">
-          <nuxt-link
-            :to="item.link"
-            class="font-poppins hover:bg-darkPurple-500 ease-in-out duration-500 hover:text-white p-6 block"
-          >
-            {{ item.title }}
-          </nuxt-link>
-        </li>
-      </ul>
-      <nuxt-link
-        to="/contact"
-        class="font-poppins text-center hover:bg-darkPurple-500 ease-in-out duration-500 hover:text-white p-6 block"
-        >Contact</nuxt-link
-      >
-    </nav>
+    <transition
+      enter-class="opacity-0"
+      enter-active-class="ease-in-out transition-medium duration-500"
+      enter-to-class="opacity-100"
+      leave-class="opacity-100"
+      leave-active-class="ease-in-out transition-medium duration-500"
+      leave-to-class="opacity-0"
+    >
+      <nav v-show="menu" class="w-full absolute bg-white transition-opacity">
+        <ul class="flex flex-col text-center">
+          <li v-for="(item, index) in items" :key="index">
+            <nuxt-link
+              :to="item.link"
+              class="font-poppins hover:bg-darkPurple-500 ease-in-out duration-500 hover:text-white p-6 block"
+            >
+              {{ item.title }}
+            </nuxt-link>
+          </li>
+        </ul>
+        <nuxt-link
+          to="/contact"
+          class="font-poppins text-center hover:bg-darkPurple-500 ease-in-out duration-500 hover:text-white p-6 block"
+          >Contact</nuxt-link
+        >
+      </nav>
+    </transition>
   </div>
 </template>
 
@@ -86,6 +95,11 @@ export default {
         },
       ],
     }
+  },
+  watch: {
+    $route() {
+      this.menu = false
+    },
   },
 }
 </script>
