@@ -10,17 +10,15 @@
         <nav v-for="(item, index) in items" :key="index">
           <nuxt-link
             :to="item.link"
-            class="font-poppins font-light mx-10 hover:text-darkPurple-500 ease-in-out duration-500"
+            class="font-poppins mx-10 hover:text-darkPurple-500 ease-in-out duration-500"
             >{{ item.title }}</nuxt-link
           >
         </nav>
       </div>
       <nuxt-link
         to="/contact"
-        class="flex items-center h-12 p-4 bg-darkPurple-500 rounded-lg hover:shadow-xl hover:bg-darkPurple-400 ease-in-out duration-500"
-        ><span class="font-poppins font-light text-white"
-          >Contact</span
-        ></nuxt-link
+        class="flex items-center h-12 p-4 bg-darkPurple-500 rounded-lg hover:shadow-lg hover:shadow-darkPurple-400/40 hover:bg-darkPurple-400 ease-in-out duration-500"
+        ><span class="font-poppins text-white">Contact</span></nuxt-link
       >
     </nav>
 
