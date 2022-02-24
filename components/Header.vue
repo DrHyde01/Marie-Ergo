@@ -18,7 +18,7 @@
       <nuxt-link
         to="/contact"
         class="flex items-center h-12 p-4 bg-darkPurple-500 rounded-lg hover:shadow-lg hover:shadow-darkPurple-400/40 hover:bg-darkPurple-400 ease-in-out duration-500"
-        ><span class="font-poppins text-white">Contact</span></nuxt-link
+        ><span class="font-poppins text-white">Me contacter</span></nuxt-link
       >
     </nav>
 
@@ -66,7 +66,7 @@
         <nuxt-link
           to="/contact"
           class="font-poppins text-center hover:bg-darkPurple-500 ease-in-out duration-500 hover:text-white p-6 block"
-          >Contact</nuxt-link
+          >Me contacter</nuxt-link
         >
       </nav>
     </transition>
@@ -86,10 +86,6 @@ export default {
         {
           title: 'Prestations',
           link: '/prestations',
-        },
-        {
-          title: 'Tarifs',
-          link: '/tarifs',
         },
       ],
     }
