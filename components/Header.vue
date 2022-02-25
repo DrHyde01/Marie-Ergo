@@ -3,10 +3,14 @@
     <nav
       class="hidden sm:flex items-center justify-between h-20 w-full py-4 px-6 fixed inset-x-0 top-0 bg-white border-b"
     >
-      <nuxt-link to="/">
-        <img src="../assets/hands_bk.png" alt="logo mains" class="h-10 mx-2" />
-      </nuxt-link>
       <div class="flex items-center justify-between">
+        <nuxt-link to="/">
+          <img
+            src="../assets/hands_bk.png"
+            alt="logo mains"
+            class="h-10 ml-2 mr-12"
+          />
+        </nuxt-link>
         <nav v-for="(item, index) in items" :key="index">
           <nuxt-link
             :to="item.link"
@@ -80,7 +84,11 @@ export default {
       menu: false,
       items: [
         {
-          title: 'Ergothérapie',
+          title: 'Accueil',
+          link: '/',
+        },
+        {
+          title: "L'ergothérapie",
           link: '/ergotherapie',
         },
         {
