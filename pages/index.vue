@@ -72,7 +72,9 @@
         <nuxt-link
           to="/prestations"
           class="contact_button flex items-center h-12 p-4 m-4 bg-amber-500 rounded-lg hover:shadow-lg hover:bg-amber-400 hover:shadow-amber-400/40 ease-in-out duration-500"
-          ><span class="font-poppins text-white">Mes services</span></nuxt-link
+          ><span class="font-poppins text-white"
+            >Mes prestations</span
+          ></nuxt-link
         >
       </div>
     </div>
