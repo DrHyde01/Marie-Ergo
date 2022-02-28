@@ -61,21 +61,31 @@
           seront sur les pages dédiées.
         </p>
       </div>
-      <div class="flex flex-wrap justify-center">
-        <nuxt-link
-          to="/ergotherapie"
-          class="contact_button flex items-center h-12 p-4 m-4 bg-green-500 rounded-lg hover:shadow-lg hover:shadow-green-400/40 hover:bg-green-400 ease-in-out duration-500"
-          ><span class="font-poppins text-white"
-            >L'ergothérapie</span
-          ></nuxt-link
-        >
-        <nuxt-link
-          to="/prestations"
-          class="contact_button flex items-center h-12 p-4 m-4 bg-amber-500 rounded-lg hover:shadow-lg hover:bg-amber-400 hover:shadow-amber-400/40 ease-in-out duration-500"
-          ><span class="font-poppins text-white"
-            >Mes prestations</span
-          ></nuxt-link
-        >
+
+      <div
+        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl"
+      >
+        <p class="font-poppins text-normal font-extralight my-4">
+          Vous voulez en savoir plus sur l'ergotherapie et les services que je
+          propose ?
+        </p>
+        <p></p>
+        <div class="flex flex-wrap justify-center">
+          <nuxt-link
+            to="/ergotherapie"
+            class="contact_button flex items-center h-12 p-4 m-4 bg-green-500 rounded-lg hover:shadow-lg hover:shadow-green-400/40 hover:bg-green-400 ease-in-out duration-500"
+            ><span class="font-poppins text-white"
+              >L'ergothérapie</span
+            ></nuxt-link
+          >
+          <nuxt-link
+            to="/prestations"
+            class="contact_button flex items-center h-12 p-4 m-4 bg-amber-500 rounded-lg hover:shadow-lg hover:bg-amber-400 hover:shadow-amber-400/40 ease-in-out duration-500"
+            ><span class="font-poppins text-white"
+              >Mes prestations</span
+            ></nuxt-link
+          >
+        </div>
       </div>
     </div>
   </div>

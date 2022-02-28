@@ -2,7 +2,7 @@
   <div class="w-screen mx-auto">
     <div class="md:pt-20">
       <div
-        class="flex flex-wrap items-center justify-center w-full p-6 md:p-14 lg:p-24 bg-gradient-to-b from-amber-500 to-amber-300"
+        class="flex flex-wrap items-center justify-center w-full p-6 md:p-14 lg:p-24 bg-cover bg-left bg-fixed bg-[url('~/assets/services_banner.jpeg')]"
       >
         <div
           class="flex flex-col flex-start p-8 md:p-10 lg:w-3/6 lg:mx-10 rounded-lg shadow-xl bg-white"

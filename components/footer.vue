@@ -39,7 +39,7 @@
       </div>
       <div class="flex justify-center mt-8">
         <p class="font-poppins text-white font-extralight">
-          2022 Tout droits réservés
+          © 2022 Tout droits réservés
         </p>
       </div>
     </footer>

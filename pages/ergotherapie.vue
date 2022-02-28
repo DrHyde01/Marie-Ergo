@@ -2,7 +2,7 @@
   <div class="w-screen mx-auto">
     <div class="md:pt-20">
       <div
-        class="flex flex-wrap items-center justify-between lg:justify-between w-full p-6 md:p-14 lg:p-24 bg-gradient-to-b from-green-500 to-green-300"
+        class="flex flex-wrap items-center justify-between lg:justify-between w-full p-6 md:p-14 lg:p-24 bg-cover bg-top bg-fixed bg-[url('~/assets/ergo_banner.jpeg')]"
       >
         <div
           class="flex flex-col flex-start p-8 md:p-10 lg:w-3/6 lg:mx-10 rounded-lg shadow-xl bg-white"
@@ -14,8 +14,12 @@
             En bref
           </h2>
           <p class="font-poppins text-normal font-extralight mt-10">
-            Un résumé simple de ce qu'est l'ergothérapie, comme sur la page
-            d'acccueil, juste quelques phrases.
+            L'ergothérapie est une discipline de la santé visant la promotion de
+            la santé et du bien-être des individus et des communautés, au
+            travers de leurs occupations. Elle soutient les personnes dans la
+            réalisation de ce qu'elles souhaitent ou doivent faire, en
+            intervenant sur les composantes de l'individu, de l'activité ou de
+            l'environnement physique ou social1.
           </p>
         </div>
 
