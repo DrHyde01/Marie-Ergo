@@ -4,9 +4,9 @@
       class="flex flex-col h-auto w-full py-10 px-12 bottom-0 bg-darkPurple-900"
     >
       <div
-        class="flex justify-center items-center md:justify-between align-center flex-wrap"
+        class="flex flex-col md:flex-row justify-center items-center md:justify-between align-center flex-wrap"
       >
-        <div class="flex flex-col text-center md:text-left mb-5 md:mb-0">
+        <div class="flex flex-col text-center md:text-left mb-0">
           <h3 class="font-poppins text-white font-normal">Marie André</h3>
           <p class="font-poppins text-white text-sm font-extralight">
             27 Boulevard Emile Combes
@@ -19,7 +19,11 @@
             06 40 58 91 29
           </p>
         </div>
-
+        <img
+          src="../assets/hands.png"
+          alt="logo mains"
+          class="h-10 my-8 md:hidden"
+        />
         <div class="flex flex-col">
           <ul class="flex flex-col text-center md:text-left">
             <li v-for="(item, index) in items" :key="index">
@@ -33,6 +37,7 @@
           </ul>
         </div>
       </div>
+
       <div class="mt-8">
         <p class="font-poppins text-center text-white font-extralight text-sm">
           © 2022 Marie André. Tout droits réservés

@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="hidden sm:flex items-center justify-between h-20 w-full py-4 px-6 fixed inset-x-0 top-0 bg-white border-b"
+      class="hidden md:flex items-center justify-between h-20 w-full py-4 px-6 fixed inset-x-0 top-0 bg-white border-b"
     >
       <div class="flex items-center justify-between">
         <nuxt-link to="/">
@@ -26,7 +26,7 @@
       >
     </nav>
 
-    <div class="flex justify-between items-center ml-auto sm:hidden p-6">
+    <div class="flex justify-between items-center ml-auto md:hidden p-6">
       <nuxt-link to="/">
         <img src="../assets/hands_bk.png" alt="logo mains" class="h-10 mx-2" />
       </nuxt-link>
