@@ -25,7 +25,7 @@
             <li v-for="(item, index) in items" :key="index">
               <nuxt-link
                 :to="item.link"
-                class="font-poppins text-white text-sm font-extralight hover:text-purple-300 ease-in-out duration-500"
+                class="font-poppins text-white text-sm font-extralight hover:text-purple-500 ease-in-out duration-500"
               >
                 {{ item.title }}
               </nuxt-link>
