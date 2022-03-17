@@ -9,7 +9,7 @@
         >
           <div class="flex flex-wrap items-center bg-d">
             <h1
-              class="font-poppins text-5xl text-darkPurple-900 font-light mr-4"
+              class="font-poppins text-5xl text-darkPurple-900 font-normal mr-4"
             >
               MARIE
             </h1>
@@ -19,22 +19,20 @@
               <img src="~/assets/hands.png" alt="mains" class="h-10" />
             </div>
             <h1
-              class="font-poppins text-5xl text-darkPurple-900 font-light md:ml-4"
+              class="font-poppins text-5xl text-darkPurple-900 font-normal md:ml-4"
             >
               ANDRE
             </h1>
           </div>
 
-          <h2 class="font-poppins text-xl text-darkPurple-900 font-light my-4">
+          <h2 class="font-poppins text-xl text-darkPurple-900 font-normal my-4">
             Ergothérapeute
           </h2>
 
-          <p class="font-poppins text-normal font-extralight mt-10">
-            Ici tu présenteras ton activité de manière brève, en précisant ta
-            localisation et en employant des mots clés importants pour ta
-            visibilité, comme "ergothérapeute, ergothérapie, Rennes, ...". Tu
-            peux aussi bien utiliser un slogan si l'inspiration te vient 🙂
-          </p>
+          <h3 class="font-poppins text-lg font-light my-4">
+            Présente et disponible pour l'évaluation de vos besoins et
+            l'adaptation de votre environnement.
+          </h3>
         </div>
         <div class="flex mt-8 lg:mt-0 mx-10">
           <img
@@ -46,28 +44,71 @@
       </div>
     </div>
     <div
-      class="flex flex-wrap flex-col items-center justify-center w-full p-6 md:p-14 lg:p-24"
+      class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24"
     >
       <div
-        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl"
+        class="flex flex-col lg:self-start items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-2xl rounded-xl bg-darkPurple-900"
       >
-        <h2 class="font-poppins text-xl text-darkPurple-900 font-light my-4">
-          À propos
-        </h2>
-        <p class="font-poppins text-normal font-extralight my-4">
-          Rentre ici dans le vif du sujet concernant ton métier, ton parcours,
-          et ce que tu peux proposer, toujours de manière brève. Amène les
-          potentiels clients à en savoir plus. Les informations plus détaillées
-          seront sur les pages dédiées.
+        <p
+          class="font-poppins text-white text-normal font-extralight my-4 leading-relaxed"
+        >
+          <strong>Ergothérapeute située sur Rennes</strong>, je me déplace à
+          votre domicile (jusqu’à 50km) pour cibler avec vous, ou votre enfant,
+          les difficultés rencontrées dans la vie quotidienne (soins personnels,
+          travail ou scolarité, loisirs, etc).
+        </p>
+        <p
+          class="font-poppins text-white text-normal font-extralight my-4 leading-relaxed"
+        >
+          Une fois celles-ci ciblées, nous travaillerons ensemble pour
+          construire des
+          <strong>solutions qui vous conviennent et vous correspondent</strong>.
         </p>
       </div>
 
+      <div class="flex justify-between items-center">
+        <img
+          src="../assets/illustration_home.jpg"
+          alt="illustration d'un service"
+          class="hidden lg:inline h-auto w-1/2 m-10"
+        />
+        <div
+          class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-2xl rounded-xl bg-darkPurple-900"
+        >
+          <p
+            class="font-poppins text-white text-normal font-extralight my-4 leading-relaxed"
+          >
+            Mon parcours m’a permis de travailler auprès d’un panel varié
+            d’usagers.
+          </p>
+          <p
+            class="font-poppins text-white text-normal font-extralight my-4 leading-relaxed"
+          >
+            Je travaille aussi bien à
+            <strong>l’évaluation de vos besoins</strong>, à
+            <strong>l’adaptation de votre domicile</strong>, qu’à
+            <strong>l’évaluation de vos besoins</strong> en aide technique
+            (ainsi qu’à des essais)
+          </p>
+          <p
+            class="font-poppins text-white text-normal font-extralight my-4 leading-relaxed"
+          >
+            De par mon parcours professionnel, je suis également
+            <strong
+              >spécialisée dans l’accompagnement des personnes présentant un
+              Trouble du Spectre de l’Autisme</strong
+            >, et plus particulièrement sur le versant des
+            <strong>particularités sensorielles</strong>.
+          </p>
+        </div>
+      </div>
+
       <div
-        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl"
+        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-2xl rounded-xl"
       >
         <p class="font-poppins text-normal font-extralight my-4">
-          Vous voulez en savoir plus sur l'ergotherapie et les services que je
-          propose ?
+          Venez en découvrir davantage sur l'ergothérapie et mes différentes
+          prestations !
         </p>
         <p></p>
         <div class="flex flex-wrap justify-center">
@@ -94,5 +135,22 @@
 <script>
 export default {
   name: 'IndexPage',
+
+  head: {
+    title: 'Marie André - Ergothérapeute',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Marie André, votre ergothérapeute située à Rennes',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'ergotherapie, ergothérapeute, ergothérapeute Rennes, ergothérapeute Ille-et-Vilaine',
+      },
+    ],
+  },
 }
 </script>

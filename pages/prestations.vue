@@ -7,7 +7,9 @@
         <div
           class="flex flex-col flex-start p-8 md:p-10 lg:w-3/6 lg:mx-10 rounded-lg shadow-xl bg-white"
         >
-          <h1 class="font-poppins text-5xl text-amber-600 font-light mr-4">
+          <h1
+            class="font-poppins text-4xl md:text-5xl text-amber-600 font-normal mr-4"
+          >
             Mes prestations
           </h1>
           <h2 class="font-poppins text-xl text-amber-600 font-light my-4">
@@ -39,3 +41,23 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head: {
+    title: 'Marie André - Mes prestations',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Marie André, votre ergothérapeute située à Rennes',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: 'ergotherapie, ergothérapeute, Rennes, bilans',
+      },
+    ],
+  },
+}
+</script>
