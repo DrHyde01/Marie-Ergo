@@ -5,7 +5,7 @@
         class="flex flex-wrap items-center justify-center lg:justify-between w-full p-6 md:p-14 lg:p-24 2xl:px-72 bg-gradient-to-b from-black to-darkPurple-900"
       >
         <div
-          class="flex flex-col flex-start p-8 md:p-10 lg:w-1/2 lg:mx-10 rounded-lg shadow-2xl shadow-white/50 bg-white"
+          class="flex flex-col flex-start p-8 md:p-10 lg:w-1/2 lg:mx-10 rounded-lg shadow-xl shadow-white/20 bg-white"
         >
           <div class="flex flex-wrap items-center bg-d">
             <h1
