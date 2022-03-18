@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav
-      class="hidden md:flex items-center justify-between h-20 w-full py-4 px-6 fixed inset-x-0 top-0 bg-white border-b"
+      class="hidden md:flex items-center justify-between h-20 w-full py-4 px-6 fixed inset-x-0 top-0 bg-white border-b z-50"
     >
       <div class="flex items-center justify-between">
         <nuxt-link to="/">

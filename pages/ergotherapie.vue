@@ -42,20 +42,22 @@
       class="flex flex-wrap flex-col items-center justify-center w-full p-6 md:p-14 lg:p-24"
     >
       <div
-        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-2xl rounded-xl bg-green-600"
+        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:-rotate-2 ease-in-out duration-500"
       >
-        <p class="font-poppins text-white text-normal font-extralight my-4">
-          <strong>L’ergothérapeute</strong> est un professionnel de santé dont
-          l’expertise se base sur le
-          <strong
+        <p class="font-poppins text-normal font-extralight my-4">
+          <strong class="text-green-600">L’ergothérapeute</strong> est un
+          professionnel de santé dont l’expertise se base sur le
+          <strong class="text-green-600"
             >lien entre l’activité humaine (travail, loisir, activités
             domestiques, etc) et la santé</strong
           >.
         </p>
-        <p class="font-poppins text-white text-normal font-extralight my-4">
-          Il intervient <strong>auprès de toutes les populations</strong>, sans
-          distinction d’âge, et quelles que soient les incapacités limitant sa
-          participation aux activités qui lui tiennent à cœur.
+        <p class="font-poppins text-normal font-extralight my-4">
+          Il intervient
+          <strong class="text-green-600"
+            >auprès de toutes les populations</strong
+          >, sans distinction d’âge, et quelles que soient les incapacités
+          limitant sa participation aux activités qui lui tiennent à cœur.
         </p>
       </div>
     </div>
