@@ -45,7 +45,7 @@
     </div>
 
     <div
-      class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24"
+      class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24 2xl:px-72"
     >
       <div class="flex justify-between items-center lg:my-10">
         <div
@@ -54,8 +54,11 @@
           <p
             class="font-poppins text-normal font-extralight my-4 leading-relaxed"
           >
-            <strong class="text-darkPurple-900"
-              >Ergothérapeute située sur Rennes</strong
+            <nuxt-link to="/ergotherapie">
+              <strong
+                class="text-darkPurple-900 hover:text-darkPurple-400 ease-in-out duration-500"
+                >Ergothérapeute située sur Rennes</strong
+              ></nuxt-link
             >, je me déplace à votre domicile (jusqu’à 50km) pour cibler avec
             vous, ou votre enfant, les difficultés rencontrées dans la vie
             quotidienne (soins personnels, travail ou scolarité, loisirs, etc).
@@ -65,8 +68,11 @@
           >
             Une fois celles-ci ciblées, nous travaillerons ensemble pour
             construire des
-            <strong class="text-darkPurple-900"
-              >solutions qui vous conviennent et vous correspondent</strong
+            <nuxt-link to="/prestations">
+              <strong
+                class="text-darkPurple-900 hover:text-darkPurple-400 ease-in-out duration-500"
+                >solutions qui vous conviennent et vous correspondent</strong
+              ></nuxt-link
             >.
           </p>
         </div>
@@ -103,7 +109,7 @@
               >l’adaptation de votre domicile</strong
             >, qu’à
             <strong class="text-darkPurple-900"
-              >l’évaluation de vos besoins</strong
+              >l’analyse de vos nécessités</strong
             >
             en aide technique (ainsi qu’à des essais)
           </p>
@@ -123,14 +129,40 @@
       </div>
 
       <div
-        class="flex flex-col items-center lg:w-1/2 lg:my-10 p-8 lg:p-10 shadow-2xl rounded-xl bg-gradient-to-tr from-indigo-50 via-neutral-50 to-white hover:shadow-2xl hover:scale-105 ease-in-out duration-500"
+        class="flex flex-col mb-10 lg:w-3/4 2xl:w-3/5 lg:my-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-bl from-indigo-100 via-neutral-50 to-white hover:shadow-2xl hover:scale-105 ease-in-out duration-500"
       >
         <p class="font-poppins text-normal font-extralight my-4">
-          Venez en découvrir davantage sur l'ergothérapie et mes différentes
-          prestations !
+          <strong class="text-darkPurple-900"
+            >Ergothérapeute diplômée d'État</strong
+          >, j'ai suivi les formations suivantes afin de vous proposer des
+          prestations aaptées à chacun de vos besoins :
         </p>
-        <p></p>
-        <div class="flex flex-wrap justify-center">
+
+        <ul
+          class="font-poppins text-normal font-normal p-6 text-darkPurple-900 list-disc"
+        >
+          <li
+            v-for="(formation, index) in formations"
+            :key="index"
+            class="items-start my-2"
+          >
+            {{ formation.name }}
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="flex flex-col items-center lg:w-1/2 lg:my-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-bl from-darkPurple-800 to-darkPurple-900 hover:shadow-2xl 5 ease-in-out duration-500"
+      >
+        <h3
+          class="font-poppins text-white text-normal font-normal my-4 leading-relaxed"
+        >
+          Vous désirez découvrir l'ergothérapie et ce qu'un professionnel peut
+          vous apporter comme solutions en fonction de votre situation ? Rendez
+          vous sur les pages suivantes pour en savoir plus !
+        </h3>
+
+        <div class="flex flex-wrap justify-center p-4">
           <nuxt-link
             to="/ergotherapie"
             class="contact_button flex items-center h-12 p-4 m-4 bg-green-500 rounded-lg hover:shadow-lg hover:shadow-green-400/40 hover:bg-green-400 ease-in-out duration-500"
@@ -153,7 +185,27 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  data() {
+    return {
+      formations: [
+        {
+          name: 'Évaluation Sensorielle de l’Adulte Autiste (ESAA)',
+        },
+        {
+          name: 'Formation Profil sensoriel de Dunn',
+        },
+        {
+          name: 'Formation Vineland (en cours pour module 2 et 3)',
+        },
+        {
+          name: 'Prévention  des Risques liées à l’Activité Physique (PRAP 2S – secteur sanitaire et médico-social)',
+        },
+        {
+          name: 'ETP : Education Thérapeutique du Patient',
+        },
+      ],
+    }
+  },
 
   head: {
     title: 'Marie André - Ergothérapeute',
