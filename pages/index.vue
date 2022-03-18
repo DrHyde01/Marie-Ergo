@@ -2,7 +2,7 @@
   <div class="w-screen mx-auto">
     <div class="md:pt-20">
       <div
-        class="flex flex-wrap items-center justify-center lg:justify-between w-full p-6 md:p-14 lg:p-24 bg-gradient-to-b from-black to-darkPurple-900"
+        class="flex flex-wrap items-center justify-center lg:justify-between w-full p-6 md:p-14 lg:p-24 2xl:px-72 bg-gradient-to-b from-black to-darkPurple-900"
       >
         <div
           class="flex flex-col flex-start p-8 md:p-10 lg:w-1/2 lg:mx-10 rounded-lg shadow-2xl shadow-white/50 bg-white"
@@ -45,9 +45,11 @@
     </div>
 
     <div
-      class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24 2xl:px-72"
+      class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24 2xl:px-96"
     >
-      <div class="flex justify-between items-center lg:my-10">
+      <div
+        class="flex flex-col lg:flex-row justify-between items-center lg:my-10"
+      >
         <div
           class="flex flex-col lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-indigo-50 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:-rotate-2 ease-in-out duration-500"
         >
@@ -79,15 +81,17 @@
         <img
           src="../assets/home_puzzle.png"
           alt="illustration d'un service"
-          class="hidden lg:inline h-auto w-1/3 m-10"
+          class="h-44 lg:h-auto lg:w-1/3 lg:m-10"
         />
       </div>
 
-      <div class="flex justify-between items-center lg:my-10">
+      <div
+        class="flex flex-col-reverse lg:flex-row justify-between items-center lg:my-10"
+      >
         <img
           src="../assets/home_puzzle2.png"
           alt="illustration d'un service"
-          class="hidden lg:inline h-auto w-1/3 m-10"
+          class="h-44 lg:h-auto lg:w-1/3 lg:m-10"
         />
         <div
           class="flex flex-col lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-tl from-indigo-50 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
@@ -152,7 +156,7 @@
       </div>
 
       <div
-        class="flex flex-col items-center lg:w-1/2 lg:my-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-bl from-darkPurple-800 to-darkPurple-900 hover:shadow-2xl 5 ease-in-out duration-500"
+        class="flex flex-col items-center lg:w-1/2 lg:my-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-bl from-darkPurple-600 to-darkPurple-900 hover:shadow-2xl 5 ease-in-out duration-500"
       >
         <h3
           class="font-poppins text-white text-normal font-normal my-4 leading-relaxed"
