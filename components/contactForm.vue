@@ -24,8 +24,8 @@
         <span class="text-gray-700">Nom</span>
         <input
           type="text"
-          name="name"
-          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm outline-0 focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+          name="nom"
+          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
           placeholder="Votre nom"
         />
       </label>
@@ -33,26 +33,49 @@
         <span class="text-gray-700">Prénom</span>
         <input
           type="text"
-          name="surname"
-          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm outline-0 focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+          name="prenom"
+          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
           placeholder="Votre prénom"
         />
       </label>
+
       <label class="block mb-6">
+        <span class="text-gray-700"
+          >Comment souhaitez vous être recontacté ?</span
+        >
+        <select v-model="selected" class="block w-full mt-1 p-2">
+          <option>Email</option>
+          <option>Téléphone</option>
+        </select>
+      </label>
+
+      <label v-if="selected === 'Email'" class="block mb-6">
         <span class="text-gray-700">Email</span>
         <input
           name="email"
           type="email"
-          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm outline-0 focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
           placeholder="Votre adresse email"
           required
         />
       </label>
+
+      <label v-if="selected === 'Téléphone'" class="block mb-6">
+        <span class="text-gray-700">Téléphone</span>
+        <input
+          name="telephone"
+          type="text"
+          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+          placeholder="Votre numero de téléphone"
+          required
+        />
+      </label>
+
       <label class="block mb-6">
         <span class="text-gray-700">Message</span>
         <textarea
           name="message"
-          class="block w-full h-28 mt-1 p-2 border-gray-300 rounded-md shadow-sm outline-0 focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+          class="block w-full h-28 mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
           rows="3"
           placeholder="Votre message"
         ></textarea>
@@ -68,3 +91,13 @@
     </form>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      selected: '',
+    }
+  },
+}
+</script>
