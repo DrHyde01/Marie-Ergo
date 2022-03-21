@@ -60,16 +60,30 @@
         />
       </label>
 
-      <label v-if="selected === 'Téléphone'" class="block mb-6">
-        <span class="text-gray-700">Téléphone</span>
-        <input
-          name="telephone"
-          type="text"
-          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
-          placeholder="Votre numero de téléphone"
-          required
-        />
-      </label>
+      <div v-if="selected === 'Téléphone'" class="block mb-6">
+        <label class="block mb-6">
+          <span class="text-gray-700">Téléphone</span>
+          <input
+            name="telephone"
+            type="text"
+            class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+            placeholder="Votre numero de téléphone"
+            required
+          />
+        </label>
+        <div class="flex flex-wrap justify-between items-center">
+          <label for="horaire">Une heure à laquelle vous rappeler ?</label>
+
+          <input
+            type="time"
+            class="p-2"
+            name="horaire"
+            min="09:00"
+            max="18:00"
+            required
+          />
+        </div>
+      </div>
 
       <label class="block mb-6">
         <span class="text-gray-700">Message</span>
