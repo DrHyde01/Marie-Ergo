@@ -19,7 +19,7 @@
       data-netlify="true"
       netlify-honeypot="bot-field"
     >
-      <input type="hidden" name="form-name" value="contactus" />
+      <input type="hidden" name="form-name" value="contact" />
       <label class="block mb-6">
         <span class="text-gray-700">Nom</span>
         <input
