@@ -1,8 +1,6 @@
 <template>
-  <div class="w-screen mx-auto">
-    <div class="md:pt-20">
-      <ContactForm />
-    </div>
+  <div class="flex flex-wrap flex-col items-center justify-center h-screen">
+    <ContactForm />
   </div>
 </template>
 
