@@ -1,6 +1,10 @@
 <template>
-  <div class="flex flex-wrap flex-col items-center justify-center h-screen">
-    <ContactForm />
+  <div class="md:pt-20">
+    <div
+      class="flex flex-wrap flex-col items-center justify-center w-full p-2 md:p-14 lg:p-24 xl:p-28 2xl:px-32"
+    >
+      <ContactForm />
+    </div>
   </div>
 </template>
 

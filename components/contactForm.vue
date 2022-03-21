@@ -15,6 +15,7 @@
       class="my-6"
       name="contact"
       method="POST"
+      action="/success"
       data-netlify="true"
       netlify-honeypot="bot-field"
     >
@@ -43,7 +44,7 @@
           name="email"
           type="email"
           class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm outline-0 focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
-          placeholder="Votre adresse mail"
+          placeholder="Votre adresse email"
           required
         />
       </label>
