@@ -14,7 +14,6 @@
     <form
       class="my-6"
       name="contact"
-      action="/succes"
       method="POST"
       data-netlify="true"
       netlify-honeypot="bot-field"
