@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-16 shadow-xl rounded-xl bg-gradient-to-tl from-indigo-50 via-neutral-50 to-white w-4/5 lg:w-1/2 2xl:w-1/3"
+    class="p-6 md:p-16 shadow-xl rounded-xl bg-gradient-to-tl from-indigo-50 via-neutral-50 to-white lg:w-1/2 2xl:w-1/3"
   >
     <div class="flex flex-col">
       <h1 class="font-poppins text-3xl text-darkPurple-900 font-normal">
@@ -27,6 +27,7 @@
           name="nom"
           class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
           placeholder="Votre nom"
+          required
         />
       </label>
       <label class="block mb-6">
@@ -36,6 +37,7 @@
           name="prenom"
           class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
           placeholder="Votre prénom"
+          required
         />
       </label>
 
@@ -44,46 +46,55 @@
           >Comment souhaitez vous être recontacté ?</span
         >
         <select v-model="selected" class="block w-full mt-1 p-2">
+          <option disabled value="">Choisissez</option>
           <option>Email</option>
           <option>Téléphone</option>
         </select>
       </label>
-
-      <label v-if="selected === 'Email'" class="block mb-6">
-        <span class="text-gray-700">Email</span>
-        <input
-          name="email"
-          type="email"
-          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
-          placeholder="Votre adresse email"
-          required
-        />
-      </label>
-
-      <div v-if="selected === 'Téléphone'" class="block mb-6">
-        <label class="block mb-6">
-          <span class="text-gray-700">Téléphone</span>
+      <transition
+        enter-class="opacity-0"
+        enter-active-class="ease-in-out  duration-500"
+        enter-to-class="opacity-100"
+        leave-class="opacity-100"
+        leave-active-class="ease-in-out duration-100"
+        leave-to-class="opacity-0"
+      >
+        <label v-if="selected === 'Email'" class="block mb-6">
+          <span class="text-gray-700">Email</span>
           <input
-            name="telephone"
-            type="text"
+            name="email"
+            type="email"
             class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
-            placeholder="Votre numero de téléphone"
+            placeholder="Votre adresse email"
             required
           />
         </label>
-        <div class="flex flex-wrap justify-between items-center">
-          <label for="horaire">Une heure à laquelle vous rappeler ?</label>
 
-          <input
-            type="time"
-            class="p-2"
-            name="horaire"
-            min="09:00"
-            max="18:00"
-            required
-          />
+        <div v-if="selected === 'Téléphone'" class="block mb-6">
+          <label class="block mb-6">
+            <span class="text-gray-700">Téléphone</span>
+            <input
+              name="telephone"
+              type="text"
+              class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+              placeholder="Votre numero de téléphone"
+              required
+            />
+          </label>
+          <div class="flex flex-wrap justify-between items-center">
+            <label for="horaire">Une heure à laquelle vous rappeler ?</label>
+
+            <input
+              type="time"
+              class="p-2"
+              name="horaire"
+              min="09:00"
+              max="18:00"
+              required
+            />
+          </div>
         </div>
-      </div>
+      </transition>
 
       <label class="block mb-6">
         <span class="text-gray-700">Message</span>
@@ -94,7 +105,7 @@
           placeholder="Votre message"
         ></textarea>
       </label>
-      <div class="mb-6">
+      <div class="mb-6 flex justify-center md:justify-start">
         <button
           type="submit"
           class="flex items-center h-12 p-4 text-white bg-darkPurple-500 rounded-lg hover:shadow-lg hover:shadow-darkPurple-600/40 hover:bg-darkPurple-600 ease-in-out duration-500"
