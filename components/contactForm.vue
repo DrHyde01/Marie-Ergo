@@ -1,6 +1,6 @@
 <template>
   <div
-    class="p-6 md:p-16 shadow-xl rounded-xl bg-gradient-to-tl from-indigo-50 via-neutral-50 to-white lg:w-1/2 2xl:w-1/3"
+    class="p-6 md:p-16 shadow-xl rounded-xl bg-gradient-to-tl from-indigo-50 via-neutral-50 to-white lg:w-1/2 2xl:w-1/3 hover:shadow-2xl ease-in-out duration-500"
   >
     <div class="flex flex-col">
       <h1 class="font-poppins text-3xl text-darkPurple-900 font-normal">

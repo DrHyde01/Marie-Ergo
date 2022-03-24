@@ -45,7 +45,7 @@
     </div>
 
     <div
-      class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24 2xl:px-96"
+      class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24 2xl:px-96 bg-gradient-to-t from-indigo-50"
     >
       <div
         class="flex flex-col lg:flex-row justify-between items-center lg:my-10"

@@ -2,7 +2,7 @@
   <div class="w-screen mx-auto">
     <div class="md:pt-20">
       <div
-        class="flex flex-wrap items-center justify-center lg:justify-between w-full p-6 md:p-14 lg:p-24 bg-cover bg-left bg-fixed bg-[url('~/assets/ergo_banner.jpeg')]"
+        class="flex flex-wrap items-center justify-center lg:justify-between w-full p-6 md:p-14 lg:p-24 2xl:px-72 bg-cover bg-left bg-fixed bg-[url('~/assets/ergo_banner.jpeg')]"
       >
         <div
           class="flex flex-col flex-start p-8 md:p-10 lg:w-3/6 lg:mx-10 rounded-lg shadow-xl bg-white"
@@ -29,8 +29,16 @@
           <div
             v-for="(action, index) in actions"
             :key="index"
-            class="flex flex-col flex-start p-8 mt-6 lg:m-8 rounded-lg shadow-xl bg-white"
+            class="flex flex-col flex-start p-8 mt-6 lg:m-8 rounded-lg shadow-xl bg-white relative"
           >
+            <div
+              class="flex justify-center items-center bg-green-600 h-16 w-16 rounded-full shadow-xl absolute -top-8 -left-8"
+            >
+              <fa
+                :icon="['fa-solid', action.icon]"
+                class="text-white text-2xl"
+              />
+            </div>
             <p class="font-poppins text-normal font-extralight">
               {{ action.name }}
             </p>
@@ -39,25 +47,44 @@
       </div>
     </div>
     <div
-      class="flex flex-wrap flex-col items-center justify-center w-full p-6 md:p-14 lg:p-24"
+      class="flex flex-wrap flex-col items-center justify-center w-full p-6 md:p-14 lg:p-24 bg-gradient-to-t from-green-50 via-neutral-50 to-white"
     >
       <div
         class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:-rotate-2 ease-in-out duration-500"
       >
         <p class="font-poppins text-normal font-extralight my-4">
-          <strong class="text-green-600">L’ergothérapeute</strong> est un
-          professionnel de santé dont l’expertise se base sur le
           <strong class="text-green-600"
-            >lien entre l’activité humaine (travail, loisir, activités
-            domestiques, etc) et la santé</strong
-          >.
+            >L’ergothérapeute (Occupational Therapist)</strong
+          >
+          est un professionnel de santé, exerçant dans les champs sanitaire,
+          médico-social et social.
         </p>
         <p class="font-poppins text-normal font-extralight my-4">
-          Il intervient
+          Collaborant avec de nombreux professionnels (médecins, auxiliaires
+          médicaux, travailleurs sociaux, acteurs de l’enseignement et de la
+          formation, techniciens de l’habitat…), il est un
           <strong class="text-green-600"
-            >auprès de toutes les populations</strong
-          >, sans distinction d’âge, et quelles que soient les incapacités
-          limitant sa participation aux activités qui lui tiennent à cœur.
+            >intervenant incontournable dans le processus d’adaptation, de
+            réadaptation et d’intégration sociale</strong
+          >
+          des personnes.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-tl from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
+      >
+        <p class="font-poppins text-normal font-extralight my-4">
+          Spécialiste du rapport entre l’activité (ou occupation en lien avec la
+          terminologie internationale désignant l’ergothérapie) et la santé,
+          <strong class="text-green-600"
+            >il mène des actions d’une part pour prévenir et modifier les
+            activités délétères pour la santé, et d’autre part pour assurer
+            l’accès des individus aux occupations qu’ils veulent ou doivent
+            faire</strong
+          >
+          et rendre possible leur accomplissement de façon sécurisée, autonome,
+          indépendante et efficace.
         </p>
       </div>
     </div>
@@ -70,13 +97,16 @@ export default {
     return {
       actions: [
         {
-          name: 'Favoriser l’autonomie des personnes',
+          name: 'Être là pour améliorer votre adaptation, réadaptation, ou intégration.',
+          icon: 'hand-holding-hand',
         },
         {
-          name: 'Permettre aux personnes d’avoir une qualité de vie satisfaisante',
+          name: 'Vous donner accès à une qualité de vie satisfaisante.',
+          icon: 'person-walking',
         },
         {
-          name: 'Faciliter leur maintien dans un milieu de vie répondant à leurs besoins et à leurs préférences',
+          name: 'Vous faciliter le maintien dans un milieu de vie répondant à vos besoins.',
+          icon: 'person-arrow-up-from-line',
         },
       ],
     }
