@@ -25,14 +25,16 @@
           </p>
         </div>
 
-        <div class="flex flex-col flex-wrap mt-14 lg:mt-0 lg:w-2/6">
+        <div
+          class="flex flex-col flex-wrap mt-10 lg:mt-0 w-3/4 md:3/6 lg:w-2/6"
+        >
           <div
             v-for="(action, index) in actions"
             :key="index"
-            class="flex flex-col flex-start p-8 mt-6 lg:m-8 rounded-lg shadow-xl bg-white relative"
+            class="flex flex-col flex-start items-center px-8 py-10 lg:p-8 mt-16 lg:mt-6 lg:m-8 rounded-lg shadow-xl bg-white relative hover:shadow-2xl hover:scale-105 ease-in-out duration-500"
           >
             <div
-              class="flex justify-center items-center bg-green-600 h-16 w-16 rounded-full shadow-xl absolute -top-8 -left-8"
+              class="flex justify-center items-center bg-green-600 h-16 w-16 rounded-full shadow-xl absolute -top-8 lg:-left-8"
             >
               <fa
                 :icon="['fa-solid', action.icon]"
@@ -49,7 +51,7 @@
     <div
       class="flex flex-wrap flex-col items-center justify-center w-full p-6 md:p-14 lg:p-24 bg-gradient-to-t from-green-50 via-neutral-50 to-white"
     >
-      <div
+      <figure
         class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:-rotate-2 ease-in-out duration-500"
       >
         <p class="font-poppins text-normal font-extralight my-4">
@@ -69,12 +71,17 @@
           >
           des personnes.
         </p>
-      </div>
+      </figure>
 
-      <div
-        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-tl from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
+      <figure
+        class="flex flex-col items-center lg:w-1/2 mb-10 shadow-xl rounded-xl bg-gradient-to-tl from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
       >
-        <p class="font-poppins text-normal font-extralight my-4">
+        <img
+          src="../assets/ergo_occupation.jpg"
+          alt="illustration de personnes qui s'occupent"
+          class="object-cover rounded-t-xl"
+        />
+        <p class="font-poppins text-normal font-extralight my-4 p-8 lg:p-10">
           Spécialiste du rapport entre l’activité (ou occupation en lien avec la
           terminologie internationale désignant l’ergothérapie) et la santé,
           <strong class="text-green-600"
@@ -86,7 +93,7 @@
           et rendre possible leur accomplissement de façon sécurisée, autonome,
           indépendante et efficace.
         </p>
-      </div>
+      </figure>
     </div>
   </div>
 </template>
