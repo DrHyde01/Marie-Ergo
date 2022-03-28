@@ -21,7 +21,7 @@
             travers de leurs occupations. Elle soutient les personnes dans la
             réalisation de ce qu'elles souhaitent ou doivent faire, en
             intervenant sur les composantes de l'individu, de l'activité ou de
-            l'environnement physique ou social1.
+            l'environnement physique ou social.
           </p>
         </div>
 
@@ -38,7 +38,7 @@
             >
               <fa
                 :icon="['fa-solid', action.icon]"
-                class="text-white text-2xl"
+                class="text-white h-8 w-8"
               />
             </div>
             <p class="font-poppins text-normal font-extralight">
@@ -104,7 +104,7 @@ export default {
     return {
       actions: [
         {
-          name: 'Être là pour améliorer votre adaptation, réadaptation, ou intégration.',
+          name: "Accompagner le processus d'adaptation, réadaptation, réhabilitation ou intégration.",
           icon: 'hand-holding-hand',
         },
         {
@@ -112,7 +112,7 @@ export default {
           icon: 'person-walking',
         },
         {
-          name: 'Vous faciliter le maintien dans un milieu de vie répondant à vos besoins.',
+          name: 'Permettre le maintien dans un milieu de vie répondant à vos besoins.',
           icon: 'person-arrow-up-from-line',
         },
       ],
