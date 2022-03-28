@@ -52,47 +52,57 @@
       class="flex flex-wrap flex-col items-center justify-center w-full p-6 md:p-14 lg:p-24 bg-gradient-to-t from-green-50 via-neutral-50 to-white"
     >
       <figure
-        class="flex flex-col items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:-rotate-2 ease-in-out duration-500"
+        class="flex flex-col items-center lg:w-1/2 2xl:w-1/3 mb-10 shadow-xl rounded-xl bg-gradient-to-br from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:-rotate-2 ease-in-out duration-500"
       >
-        <p class="font-poppins text-normal font-extralight my-4">
-          <strong class="text-green-600"
-            >L’ergothérapeute (Occupational Therapist)</strong
-          >
-          est un professionnel de santé, exerçant dans les champs sanitaire,
-          médico-social et social.
-        </p>
-        <p class="font-poppins text-normal font-extralight my-4">
-          Collaborant avec de nombreux professionnels (médecins, auxiliaires
-          médicaux, travailleurs sociaux, acteurs de l’enseignement et de la
-          formation, techniciens de l’habitat…), il est un
-          <strong class="text-green-600"
-            >intervenant incontournable dans le processus d’adaptation, de
-            réadaptation et d’intégration sociale</strong
-          >
-          des personnes.
-        </p>
+        <img
+          src="../assets/ergo_occupation2.jpg"
+          alt="illustration de personnes qui s'entreaident"
+          class="object-cover rounded-t-xl"
+        />
+        <figcaption class="p-8 lg:p-10">
+          <p class="font-poppins text-normal font-extralight my-4">
+            <strong class="text-green-600"
+              >L’ergothérapeute (Occupational Therapist)</strong
+            >
+            est un professionnel de santé, exerçant dans les champs sanitaire,
+            médico-social et social.
+          </p>
+          <p class="font-poppins text-normal font-extralight my-4">
+            Collaborant avec de nombreux professionnels (médecins, auxiliaires
+            médicaux, travailleurs sociaux, acteurs de l’enseignement et de la
+            formation, techniciens de l’habitat…), il est un
+            <strong class="text-green-600"
+              >intervenant incontournable dans le processus d’adaptation, de
+              réadaptation et d’intégration sociale</strong
+            >
+            des personnes.
+          </p>
+        </figcaption>
       </figure>
 
       <figure
-        class="flex flex-col items-center lg:w-1/2 mb-10 shadow-xl rounded-xl bg-gradient-to-tl from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
+        class="flex flex-col items-center lg:w-1/2 2xl:w-1/3 mb-10 shadow-xl rounded-xl bg-gradient-to-tl from-green-100 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
       >
         <img
           src="../assets/ergo_occupation.jpg"
           alt="illustration de personnes qui s'occupent"
           class="object-cover rounded-t-xl"
         />
-        <p class="font-poppins text-normal font-extralight my-4 p-8 lg:p-10">
-          Spécialiste du rapport entre l’activité (ou occupation en lien avec la
-          terminologie internationale désignant l’ergothérapie) et la santé,
-          <strong class="text-green-600"
-            >il mène des actions d’une part pour prévenir et modifier les
-            activités délétères pour la santé, et d’autre part pour assurer
-            l’accès des individus aux occupations qu’ils veulent ou doivent
-            faire</strong
-          >
-          et rendre possible leur accomplissement de façon sécurisée, autonome,
-          indépendante et efficace.
-        </p>
+        <figcaption class="p-8 lg:p-10">
+          <p class="font-poppins text-normal font-extralight my-4">
+            Spécialiste du rapport entre l’activité (ou occupation en lien avec
+            la terminologie internationale désignant l’ergothérapie) et la
+            santé,
+            <strong class="text-green-600"
+              >il mène des actions d’une part pour prévenir et modifier les
+              activités délétères pour la santé, et d’autre part pour assurer
+              l’accès des individus aux occupations qu’ils veulent ou doivent
+              faire</strong
+            >
+            et rendre possible leur accomplissement de façon sécurisée,
+            autonome, indépendante et efficace.
+          </p>
+        </figcaption>
       </figure>
     </div>
   </div>
