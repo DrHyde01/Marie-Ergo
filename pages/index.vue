@@ -48,7 +48,7 @@
       class="flex flex-wrap flex-col items-center justify-center w-full px-6 py-12 md:p-14 lg:p-24 2xl:px-96 bg-gradient-to-t from-indigo-50"
     >
       <div
-        class="flex flex-col lg:flex-row justify-between items-center lg:my-10"
+        class="flex flex-col-reverse lg:flex-row justify-between items-center lg:my-10"
       >
         <div
           class="flex flex-col lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-indigo-50 via-neutral-50 to-white hover:shadow-2xl origin-center hover:origin-bottom hover:-rotate-2 ease-in-out duration-500"
@@ -86,7 +86,7 @@
       </div>
 
       <div
-        class="flex flex-col-reverse lg:flex-row justify-between items-center lg:my-10"
+        class="flex flex-col lg:flex-row justify-between items-center lg:my-10"
       >
         <img
           src="../assets/home_puzzle2.png"
@@ -106,15 +106,24 @@
             class="font-poppins text-normal font-extralight my-4 leading-relaxed"
           >
             Je travaille aussi bien à
-            <strong class="text-darkPurple-900"
-              >l’évaluation de vos besoins</strong
+            <nuxt-link to="/perstations">
+              <strong
+                class="text-darkPurple-900 hover:text-darkPurple-400 ease-in-out duration-500"
+                >l’évaluation de vos besoins</strong
+              ></nuxt-link
             >, à
-            <strong class="text-darkPurple-900"
-              >l’adaptation de votre domicile</strong
+            <nuxt-link to="/prestations">
+              <strong
+                class="text-darkPurple-900 hover:text-darkPurple-400 ease-in-out duration-500"
+                >l’adaptation de votre domicile</strong
+              ></nuxt-link
             >, qu’à
-            <strong class="text-darkPurple-900"
-              >l’analyse de vos nécessités</strong
-            >
+            <nuxt-link to="/prestations">
+              <strong
+                class="text-darkPurple-900 hover:text-darkPurple-400 ease-in-out duration-500"
+                >l’analyse de vos nécessités</strong
+              >
+            </nuxt-link>
             en aide technique (ainsi qu’à des essais)
           </p>
           <p
@@ -136,8 +145,11 @@
         class="flex flex-col mb-10 lg:w-3/4 2xl:w-3/5 lg:my-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-bl from-indigo-100 via-neutral-50 to-white hover:shadow-2xl hover:scale-105 ease-in-out duration-500"
       >
         <p class="font-poppins text-normal font-extralight my-4">
-          <strong class="text-darkPurple-900"
-            >Ergothérapeute diplômée d'État</strong
+          <nuxt-link to="/ergotherapie">
+            <strong
+              class="text-darkPurple-900 hover:text-darkPurple-400 ease-in-out duration-500"
+              >Ergothérapeute diplômée d'État</strong
+            ></nuxt-link
           >, j'ai suivi les formations suivantes afin de vous proposer des
           prestations aaptées à chacun de vos besoins :
         </p>
@@ -217,7 +229,8 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Marie André, votre ergothérapeute située à Rennes',
+        content:
+          "Marie André, votre ergothérapeute située à Rennes. Présente et disponible pour l'évaluation de vos besoins et l'adaptation de votre environnement.",
       },
       {
         hid: 'keywords',

@@ -38,7 +38,7 @@
             >
               <fa
                 :icon="['fa-solid', action.icon]"
-                class="text-white h-8 w-8"
+                class="text-white h-6 w-6"
               />
             </div>
             <p class="font-poppins text-normal font-extralight">
@@ -104,6 +104,27 @@
           </p>
         </figcaption>
       </figure>
+
+      <div
+        class="flex flex-col items-center lg:w-1/2 2xl:w-1/3 lg:my-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-bl from-green-300 to-green-600 hover:shadow-2xl 5 ease-in-out duration-500"
+      >
+        <h3
+          class="font-poppins text-white text-center text-normal font-normal my-4 leading-relaxed"
+        >
+          Vous voulez en savoir plus sur les différentes prestations que je
+          propose en tant qu'ergothérapeute ?
+        </h3>
+
+        <div class="flex flex-wrap justify-center p-4">
+          <nuxt-link
+            to="/prestations"
+            class="contact_button flex items-center h-12 p-4 m-4 bg-amber-500 rounded-lg hover:shadow-lg hover:bg-amber-400 hover:shadow-amber-400/40 ease-in-out duration-500"
+            ><span class="font-poppins text-white"
+              >Mes prestations</span
+            ></nuxt-link
+          >
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -135,12 +156,14 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Marie André, votre ergothérapeute située à Rennes',
+        content:
+          "Ce que l'ergotherapie et l'ergothérapeute peut vous apporter dans la vie de tout les jours",
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'ergotherapie, ergothérapeute, Rennes, bilans',
+        content:
+          'ergotherapie, ergothérapeute, Rennes, accompagnement, adaptation, réadaptation',
       },
     ],
   },

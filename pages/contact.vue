@@ -17,13 +17,13 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Marie André, votre ergothérapeute située à Rennes. Prenez contact avec moi pour me faire part de vos besoins',
+          'Contactez-moi pour une évaluation, un bilan, tout simplement pour des renseignements',
       },
       {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'ergotherapie, ergothérapeute, Rennes, bilans, rdv ergothérapeute, rdv bilans ergothérapeute, rdv évaluation ergothérapeute',
+          'ergotherapie, ergothérapeute, Rennes, contact Ergothérapeute, rdv ergothérapeute, rdv bilans ergothérapeute, rdv évaluation ergothérapeute',
       },
     ],
   },
