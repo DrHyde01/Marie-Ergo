@@ -33,7 +33,8 @@
       <div
         v-for="(prestation, index) in prestations"
         :key="index"
-        class="flex flex-col sm:w-full md:w-5/12 h-auto p-10 shadow-xl rounded-xl bg-gradient-to-tl from-amber-50 via-neutral-50 to-white overflow-auto hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
+        class="flex flex-col sm:w-full md:w-5/12 h-auto p-10 shadow-xl rounded-xl overflow-auto hover:shadow-2xl origin-center hover:origin-bottom ease-in-out duration-500"
+        :class="prestation.custom"
       >
         <h2 class="font-poppins text-xl text-amber-500 font-light my-4">
           {{ prestation.name }}
@@ -57,26 +58,36 @@ export default {
           name: 'Premier entretien :',
           description:
             'Cette première rencontre va permettre de cerner vos besoins, d’échanger autour des problématiques que vous rencontrez au quotidien. A la fin de celle-ci, nous déterminerons ensemble les évaluations nécessaires, ainsi que l’accompagnement le plus adéquat.',
+          custom:
+            'bg-gradient-to-tl from-amber-50 via-neutral-50 to-white hover:-rotate-2',
         },
         {
           name: 'Mises en situation (domicile, travail, loisirs) :',
           description:
             'En fonction des difficultés ciblées lors de notre première entretien, je vous propose des mises en situations afin d’évaluer ce qui pose problèmes dans la réalisation de tâche.',
+          custom:
+            'bg-gradient-to-tr from-amber-50 via-neutral-50 to-white hover:rotate-2',
         },
         {
           name: 'Évaluation du besoin en aide technique (+ essai) :',
           description:
             'Vous avez des besoins spécifiques en aides techniques (enfile soutien-gorge, couverts adaptés, aides au déplacement, etc) ? Je vous aide dans le choix d’outils adaptés à votre demande. Nous programmerons également des essais avant toute acquisition de matériel.',
+          custom:
+            'bg-gradient-to-bl from-amber-50 via-neutral-50 to-white hover:rotate-2',
         },
         {
           name: 'Diagnostic d’accessibilité du logement :',
           description:
             'Parce que votre domicile doit correspondre à vos besoins pour garantir un maximum d’autonomie, je suis en mesure d’établir un diagnostic d’accessibilité de votre domicile, et de vous accompagner tout au long du processus d’aménagement.',
+          custom:
+            'bg-gradient-to-br from-amber-50 via-neutral-50 to-white hover:-rotate-2',
         },
         {
           name: 'Séance de suivi :',
           description:
             'Pendant ces séances, nous avancerons selon les divers axes établis précédemment et, si besoin, réévaluerons ces axes pour qu’ils restent en accord avec vos besoins.',
+          custom:
+            'bg-gradient-to-t from-amber-50 via-neutral-50 to-white hover:rotate-2',
         },
       ],
 
