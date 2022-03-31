@@ -2,7 +2,7 @@
   <div class="w-screen mx-auto">
     <div class="md:pt-20">
       <div
-        class="flex flex-wrap items-center justify-center lg:justify-between w-full p-6 md:p-14 lg:p-24 2xl:px-72 bg-cover bg-center bg-fixed bg-[url('~/assets/ergo_banner.jpeg')]"
+        class="flex flex-wrap items-center justify-center lg:justify-between w-full p-14 lg:p-24 2xl:px-72 bg-cover bg-center bg-fixed bg-[url('~/assets/ergo_banner.jpeg')]"
       >
         <div
           class="flex flex-col flex-start p-8 md:p-10 lg:w-3/6 lg:mx-10 rounded-lg shadow-xl bg-white"
@@ -28,7 +28,7 @@
         </div>
 
         <div
-          class="flex flex-col flex-wrap mt-10 lg:mt-0 w-3/4 md:3/6 lg:w-2/6"
+          class="flex flex-col flex-wrap mt-10 lg:mt-0 w-4/5 md:3/6 lg:w-2/6"
         >
           <div
             v-for="(action, index) in actions"

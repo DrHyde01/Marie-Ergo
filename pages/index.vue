@@ -36,9 +36,9 @@
         </div>
         <div class="flex mt-8 lg:mt-0 mx-10">
           <img
-            src="../assets/portrait_home.jpeg"
+            src="../assets/portrait_home.jpg"
             alt="photo marie"
-            class="object-cover object-top h-80 w-full lg:h-96 lg:w-80 rounded-lg shadow-lg"
+            class="object-cover object-top w-full h-96 lg:h-auto lg:w-80 rounded-lg shadow-lg"
           />
         </div>
       </div>
