@@ -80,6 +80,55 @@
         </div>
       </div>
     </div>
+    <div
+      class="flex flex-wrap flex-row justify-center gap-12 lg:gap-14 w-full p-6 pt-24 md:p-10 md:pt-24 lg:p-10 lg:pt-10 2xl:px-72"
+    >
+      <div
+        class="flex flex-col items-center lg:w-1/2 lg:my-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-bl from-darkPurple-600 to-darkPurple-900 hover:shadow-2xl 5 ease-in-out duration-500"
+      >
+        <h2 class="font-poppins text-xl text-white font-light my-4">
+          Bon à savoir !
+        </h2>
+        <p
+          class="font-poppins text-white text-normal font-normal my-4 leading-relaxed"
+        >
+          Tout déplacement au delà de km de mon adresse postale entraîne le
+          paiement de frais kilométriques.
+        </p>
+        <p
+          class="font-poppins text-white text-normal font-normal my-4 leading-relaxed"
+        >
+          Les séances d’ergothérapie ne sont pas remboursées par l’Assurance
+          Maladie. Pour obtenir des aides afin de financer vos séances, vous
+          pouvez effectuer des demandes auprès des organismes suivants :
+        </p>
+
+        <ul
+          class="font-poppins text-normal font-extralight p-6 text-white leading-relaxed list-disc"
+        >
+          <li
+            v-for="(aide, index) in aides"
+            :key="index"
+            class="items-start my-2"
+          >
+            {{ aide.name }}
+          </li>
+        </ul>
+        <p
+          class="font-poppins text-white text-center text-normal font-normal my-4 leading-relaxed"
+        >
+          Vous souhaitez avoir plus d'informations au sujet de mes prestations ?
+          Cliquez sur le bouton ci-dessous afin de prendre contact !
+        </p>
+        <div class="flex flex-wrap justify-center p-4">
+          <nuxt-link
+            to="/contact"
+            class="contact_button flex items-center h-12 p-4 m-4 bg-white rounded-lg text-darkPurple-900 hover:shadow-lg hover:shadow-darkPurple-400/40 hover:bg-darkPurple-400 hover:text-white ease-in-out duration-500"
+            ><span class="font-poppins">Me contacter</span></nuxt-link
+          >
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -141,6 +190,21 @@ export default {
             'bg-gradient-to-t from-amber-100 via-neutral-50 to-white hover:rotate-2',
         },
       ],
+
+      aides: [
+        {
+          name: 'MDPH : Allocation d’éducation de l’enfant handicapé (AEEH), Prestation de compensation du Handicap (PCH)',
+        },
+        {
+          name: 'Plateforme TND 35 : plateforme d’intervention précoce permettant de faire un bilan et des séances d’ergothérapie pour les enfants de 0 à 7 ans présentant un trouble du neuro-développement',
+        },
+        {
+          name: 'CPAM : demande de secours en prestations extra légales ou faire une demande de fond d’action sociale.',
+        },
+        {
+          name: "Mutuelles, caisses de retraite; comité d'entreprise",
+        },
+      ],
     }
   },
 
@@ -150,12 +214,14 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'Marie André, votre ergothérapeute située à Rennes',
+        content:
+          'Premier entretien, évaluations, suivi, ... Découvrez les différentes prestations que je vous propose.',
       },
       {
         hid: 'keywords',
         name: 'keywords',
-        content: 'ergotherapie, ergothérapeute, Rennes, bilans',
+        content:
+          'ergotherapie, ergothérapeute, Rennes, évalutations, suivi, TSA, prestations',
       },
     ],
   },

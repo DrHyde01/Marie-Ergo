@@ -108,7 +108,7 @@
       <div class="mb-6 flex justify-center md:justify-start">
         <button
           type="submit"
-          class="flex items-center h-12 p-4 text-white bg-darkPurple-500 rounded-lg hover:shadow-lg hover:shadow-darkPurple-600/40 hover:bg-darkPurple-600 ease-in-out duration-500"
+          class="flex items-center h-12 p-4 text-white bg-darkPurple-500 rounded-lg hover:shadow-lg hover:shadow-darkPurple-400/40 hover:bg-darkPurple-400 ease-in-out duration-500"
         >
           Envoyer
         </button>
