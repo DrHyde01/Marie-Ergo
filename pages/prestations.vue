@@ -28,12 +28,12 @@
     </div>
 
     <div
-      class="flex flex-wrap flex-row justify-center gap-8 lg:gap-14 w-full p-6 md:p-10 lg:p-24 2xl:px-72 bg-gradient-to-t from-neutral-50 to-white"
+      class="flex flex-wrap flex-row justify-center gap-12 lg:gap-14 w-full p-6 md:p-10 lg:p-24 2xl:px-72 bg-gradient-to-t from-neutral-50 to-white"
     >
       <div
         v-for="(prestation, index) in prestations"
         :key="index"
-        class="flex flex-col sm:w-full md:w-2/5 md:h-96 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-amber-50 via-neutral-50 to-white overflow-auto"
+        class="flex flex-col sm:w-full md:w-5/12 h-auto p-10 shadow-xl rounded-xl bg-gradient-to-tl from-amber-50 via-neutral-50 to-white overflow-auto hover:shadow-2xl origin-center hover:origin-bottom hover:rotate-2 ease-in-out duration-500"
       >
         <h2 class="font-poppins text-xl text-amber-500 font-light my-4">
           {{ prestation.name }}
