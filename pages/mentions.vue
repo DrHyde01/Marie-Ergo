@@ -23,7 +23,7 @@
         </p>
         <p class="font-poppins text-normal font-extralight my-4">
           <strong>Identification de l'entreprise</strong> : André Marie - SIREN
-          : 905085585 - Adresse postale : 7 Boulevard Emile Combes 35200 Rennes
+          : 905282091 - Adresse postale : 7 Boulevard Emile Combes 35200 Rennes
         </p>
         <p class="font-poppins text-normal font-extralight my-4">
           <strong>Hébergeur :</strong> OVH SAS - 2 rue Kellermann - BP 80157 -
@@ -109,3 +109,24 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head: {
+    title: 'Marie André - Mentions légales',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Mentions légales',
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'ergotherapie, ergothérapeute, Rennes, accompagnement, adaptation, réadaptation',
+      },
+    ],
+  },
+}
+</script>

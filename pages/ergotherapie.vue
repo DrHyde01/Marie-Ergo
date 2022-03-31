@@ -15,7 +15,9 @@
           <h2 class="font-poppins text-xl text-green-600 font-light my-4">
             En bref
           </h2>
-          <p class="font-poppins text-normal font-extralight mt-10">
+          <p
+            class="font-poppins text-normal font-extralight mt-6 leading-relaxed"
+          >
             L'ergothérapie est une discipline de la santé visant la promotion de
             la santé et du bien-être des individus et des communautés, au
             travers de leurs occupations. Elle soutient les personnes dans la
@@ -60,14 +62,18 @@
           class="object-cover rounded-t-xl"
         />
         <figcaption class="p-8 lg:p-10">
-          <p class="font-poppins text-normal font-extralight my-4">
+          <p
+            class="font-poppins text-normal font-extralight my-4 leading-relaxed"
+          >
             <strong class="text-green-600"
               >L’ergothérapeute (Occupational Therapist)</strong
             >
             est un professionnel de santé, exerçant dans les champs sanitaire,
             médico-social et social.
           </p>
-          <p class="font-poppins text-normal font-extralight my-4">
+          <p
+            class="font-poppins text-normal font-extralight my-4 leading-relaxed"
+          >
             Collaborant avec de nombreux professionnels (médecins, auxiliaires
             médicaux, travailleurs sociaux, acteurs de l’enseignement et de la
             formation, techniciens de l’habitat…), il est un
@@ -89,7 +95,9 @@
           class="object-cover rounded-t-xl"
         />
         <figcaption class="p-8 lg:p-10">
-          <p class="font-poppins text-normal font-extralight my-4">
+          <p
+            class="font-poppins text-normal font-extralight my-4 leading-relaxed"
+          >
             Spécialiste du rapport entre l’activité (ou occupation en lien avec
             la terminologie internationale désignant l’ergothérapie) et la
             santé,

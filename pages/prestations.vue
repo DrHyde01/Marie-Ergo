@@ -15,39 +15,33 @@
           <h2 class="font-poppins text-xl text-amber-600 font-light my-4">
             Ce que je propose
           </h2>
-          <p class="font-poppins text-normal font-extralight mt-10">
-            Comme sur les autres pages, ce bloc sert uniquement à remplir un
-            résumé bref de la page.
+          <p
+            class="font-poppins text-normal font-extralight mt-6 leading-relaxed"
+          >
+            En tant qu'ergothérapeute je vous propose diverses prestations afin
+            de cibler, évaluer, et suivre vos différents besoins.<br />
+            D'un premier entretien, à une évaluation, jusqu'au suivi, venez en
+            savoir plus sur mes services.
           </p>
         </div>
       </div>
     </div>
 
     <div
-      class="flex flex-wrap flex-col items-center w-full p-6 md:p-14 lg:p-24 bg-gradient-to-t from-neutral-50 to-white"
+      class="flex flex-wrap flex-row justify-center gap-8 lg:gap-14 w-full p-6 md:p-10 lg:p-24 2xl:px-72 bg-gradient-to-t from-neutral-50 to-white"
     >
       <div
-        class="flex flex-col justify-start items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-amber-50 via-neutral-50 to-white"
+        v-for="(prestation, index) in prestations"
+        :key="index"
+        class="flex flex-col sm:w-full md:w-2/5 md:h-96 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-amber-50 via-neutral-50 to-white overflow-auto"
       >
         <h2 class="font-poppins text-xl text-amber-500 font-light my-4">
-          Aménagements d'environnement
+          {{ prestation.name }}
         </h2>
-        <p class="font-poppins text-normal font-extralight my-4">
-          Renseigne une description plus détaillée de l'ergothérapie, en donnant
-          des exemples. Je pourrais inclure ces exemples dans des "bulles", à
-          voir !
-        </p>
-      </div>
-      <div
-        class="flex flex-col justify-start items-center lg:w-1/2 mb-10 p-8 lg:p-10 shadow-xl rounded-xl bg-gradient-to-br from-amber-50 via-neutral-50 to-white"
-      >
-        <h2 class="font-poppins text-xl text-amber-500 font-light my-4">
-          Aménagements d'environnement
-        </h2>
-        <p class="font-poppins text-normal font-extralight my-4">
-          Renseigne une description plus détaillée de l'ergothérapie, en donnant
-          des exemples. Je pourrais inclure ces exemples dans des "bulles", à
-          voir !
+        <p
+          class="font-poppins text-normal font-extralight my-4 leading-relaxed"
+        >
+          {{ prestation.description }}
         </p>
       </div>
     </div>
@@ -56,6 +50,51 @@
 
 <script>
 export default {
+  data() {
+    return {
+      prestations: [
+        {
+          name: 'Premier entretien :',
+          description:
+            'Cette première rencontre va permettre de cerner vos besoins, d’échanger autour des problématiques que vous rencontrez au quotidien. A la fin de celle-ci, nous déterminerons ensemble les évaluations nécessaires, ainsi que l’accompagnement le plus adéquat.',
+        },
+        {
+          name: 'Mises en situation (domicile, travail, loisirs) :',
+          description:
+            'En fonction des difficultés ciblées lors de notre première entretien, je vous propose des mises en situations afin d’évaluer ce qui pose problèmes dans la réalisation de tâche.',
+        },
+        {
+          name: 'Évaluation du besoin en aide technique (+ essai) :',
+          description:
+            'Vous avez des besoins spécifiques en aides techniques (enfile soutien-gorge, couverts adaptés, aides au déplacement, etc) ? Je vous aide dans le choix d’outils adaptés à votre demande. Nous programmerons également des essais avant toute acquisition de matériel.',
+        },
+        {
+          name: 'Diagnostic d’accessibilité du logement :',
+          description:
+            'Parce que votre domicile doit correspondre à vos besoins pour garantir un maximum d’autonomie, je suis en mesure d’établir un diagnostic d’accessibilité de votre domicile, et de vous accompagner tout au long du processus d’aménagement.',
+        },
+        {
+          name: 'Séance de suivi :',
+          description:
+            'Pendant ces séances, nous avancerons selon les divers axes établis précédemment et, si besoin, réévaluerons ces axes pour qu’ils restent en accord avec vos besoins.',
+        },
+      ],
+
+      prestationsTSA: [
+        {
+          name: 'Évaluation sensorielle :',
+          description:
+            'L’évaluation sensorielle permet de mettre en avant et de comprendre les particularités de perception et de traitement de l’information sensorielle (auditive, visuelle, olfactive,…). Cela donnera lieu à des propositions d’aménagement de l’environnement, de mise en place d’aides techniques, de moyens de compensations.',
+        },
+        {
+          name: 'Évaluation des comportements adaptatifs :',
+          description:
+            'Via l’échelle Vineland-II, il est possible d’évaluer les capacités d’autonomie et d’adaptation aux situations de vie quotidienne.',
+        },
+      ],
+    }
+  },
+
   head: {
     title: 'Marie André - Mes prestations',
     meta: [
