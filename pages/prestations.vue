@@ -92,7 +92,7 @@
         <p
           class="font-poppins text-white text-normal font-normal my-4 leading-relaxed"
         >
-          Tout déplacement au delà de km de mon adresse postale entraîne le
+          Tout déplacement au delà de 30 km de mon adresse postale entraîne le
           paiement de frais kilométriques.
         </p>
         <p
@@ -133,6 +133,7 @@
 </template>
 
 <script>
+import ogImage from '../assets/portrait_home.jpg'
 export default {
   data() {
     return {
@@ -222,6 +223,24 @@ export default {
         name: 'keywords',
         content:
           'ergotherapie, ergothérapeute, Rennes, évalutations, suivi, TSA, prestations',
+      },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og-title',
+        property: 'og:title',
+        content: 'Marie André - Prestations',
+      },
+      {
+        hid: 'og-desc',
+        property: 'og:description',
+        content:
+          'Premier entretien, évaluations, suivi, ... Découvrez les différentes prestations que je vous propose.',
+      },
+      { hid: 'og-image', property: 'og:image', content: ogImage },
+      {
+        hid: 'og-url',
+        property: 'og:url',
+        content: 'marie-andre-ergothérapeute.fr/prestations',
       },
     ],
   },

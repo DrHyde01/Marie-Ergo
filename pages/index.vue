@@ -200,6 +200,7 @@
 </template>
 
 <script>
+import ogImage from '../assets/portrait_home.jpg'
 export default {
   data() {
     return {
@@ -237,6 +238,24 @@ export default {
         name: 'keywords',
         content:
           'ergotherapie, ergothérapeute, ergothérapeute Rennes, ergothérapeute Ille-et-Vilaine',
+      },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og-title',
+        property: 'og:title',
+        content: 'Marie André - Ergothérapeute',
+      },
+      {
+        hid: 'og-desc',
+        property: 'og:description',
+        content:
+          "Marie André, votre ergothérapeute située à Rennes. Présente et disponible pour l'évaluation de vos besoins et l'adaptation de votre environnement.",
+      },
+      { hid: 'og-image', property: 'og:image', content: ogImage },
+      {
+        hid: 'og-url',
+        property: 'og:url',
+        content: 'marie-andre-ergothérapeute.fr',
       },
     ],
   },

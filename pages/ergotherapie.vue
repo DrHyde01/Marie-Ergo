@@ -136,6 +136,7 @@
 </template>
 
 <script>
+import ogImage from '../assets/portrait_home.jpg'
 export default {
   data() {
     return {
@@ -170,6 +171,24 @@ export default {
         name: 'keywords',
         content:
           'ergotherapie, ergothérapeute, Rennes, accompagnement, adaptation, réadaptation',
+      },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      {
+        hid: 'og-title',
+        property: 'og:title',
+        content: "Marie André - L'ergothérapie",
+      },
+      {
+        hid: 'og-desc',
+        property: 'og:description',
+        content:
+          "Ce que l'ergotherapie et l'ergothérapeute peut vous apporter dans la vie de tout les jours",
+      },
+      { hid: 'og-image', property: 'og:image', content: ogImage },
+      {
+        hid: 'og-url',
+        property: 'og:url',
+        content: 'marie-andre-ergothérapeute.fr/ergothérapie',
       },
     ],
   },
