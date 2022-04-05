@@ -133,7 +133,7 @@
 </template>
 
 <script>
-import ogImage from '../assets/portrait_home.jpg'
+import ogImage from '../assets/portrait_mini.jpg'
 export default {
   data() {
     return {
