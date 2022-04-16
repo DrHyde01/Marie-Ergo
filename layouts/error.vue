@@ -27,5 +27,13 @@ export default {
   layout: 'default',
   // eslint-disable-next-line vue/require-prop-types
   props: ['error'],
+
+  data() {
+    return {
+      hid: 'robots',
+      name: 'robots',
+      content: 'noindex, nofollow',
+    }
+  },
 }
 </script>
