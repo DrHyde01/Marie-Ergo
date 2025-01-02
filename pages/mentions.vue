@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen mx-auto">
+  <div class="mx-auto">
     <div class="md:pt-20">
       <div class="p-6 md:p-20">
         <h1 class="font-poppins text-3xl text-darkPurple-900 font-normal mb-6">

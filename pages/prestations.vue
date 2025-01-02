@@ -1,5 +1,5 @@
 <template>
-  <div class="w-screen mx-auto">
+  <div class="mx-auto">
     <div class="md:pt-20">
       <div
         class="flex flex-wrap items-center justify-center w-full p-14 md:p-14 lg:p-24 2xl:px-72 bg-cover bg-center bg-fixed bg-[url('~/assets/services_banner.jpeg')]"
