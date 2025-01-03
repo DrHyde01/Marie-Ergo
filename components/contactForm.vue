@@ -14,8 +14,6 @@
     <form
       class="my-6"
       name="contact"
-      method="POST"
-      action="/success/"
       data-netlify="true"
       netlify-honeypot="bot-field"
       @submit.prevent="handleSubmit"
@@ -43,62 +41,26 @@
       </label>
 
       <label class="block mb-6">
-        <span class="text-gray-700"
-          >Comment souhaitez vous être recontacté ?</span
-        >
-        <select v-model="selected" class="block w-full mt-1 p-2">
-          <option disabled value="">Choisissez</option>
-          <option>Email</option>
-          <option>Téléphone</option>
-        </select>
+        <span class="text-gray-700">Email</span>
+        <input
+          name="email"
+          type="email"
+          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+          placeholder="Votre adresse email"
+          required
+        />
       </label>
-      <transition
-        enter-class="opacity-0"
-        enter-active-class="ease-in-out  duration-500"
-        enter-to-class="opacity-100"
-        leave-class="opacity-100"
-        leave-active-class="ease-in-out duration-100"
-        leave-to-class="opacity-0"
-      >
-        <label v-if="selected === 'Email'" class="block mb-6">
-          <span class="text-gray-700">Email</span>
-          <input
-            v-model="email"
-            name="email"
-            type="email"
-            class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
-            placeholder="Votre adresse email"
-            required
-          />
-        </label>
 
-        <div v-if="selected === 'Téléphone'" class="block mb-6">
-          <label class="block mb-6">
-            <span class="text-gray-700">Téléphone</span>
-            <input
-              v-model="telephone"
-              name="telephone"
-              type="text"
-              class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
-              placeholder="Votre numero de téléphone"
-              required
-            />
-          </label>
-          <div class="flex flex-wrap justify-between items-center">
-            <label for="horaire">Une heure à laquelle vous rappeler ?</label>
-
-            <input
-              v-model="horaire"
-              type="time"
-              class="p-2"
-              name="horaire"
-              min="09:00"
-              max="18:00"
-              required
-            />
-          </div>
-        </div>
-      </transition>
+      <label class="block mb-6">
+        <span class="text-gray-700">Téléphone</span>
+        <input
+          name="telephone"
+          type="text"
+          class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
+          placeholder="Votre numero de téléphone"
+          required
+        />
+      </label>
 
       <label class="block mb-6">
         <span class="text-gray-700">Message</span>
@@ -123,14 +85,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      selected: '',
-      telephone: '',
-      email: '',
-      horaire: '',
-    }
-  },
   methods: {
     handleSubmit(event) {
       event.preventDefault()
