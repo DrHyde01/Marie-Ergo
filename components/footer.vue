@@ -9,10 +9,13 @@
         <div class="flex flex-col text-center md:text-left mb-0">
           <h3 class="font-poppins text-white font-normal">Marie André</h3>
           <p class="font-poppins text-white text-sm font-extralight">
-            27 Boulevard Emile Combes
+            Cabinet Oberthur d'Esprit
           </p>
           <p class="font-poppins text-white text-sm font-extralight">
-            35200 Rennes
+            1 rue Raoul Ponchon
+          </p>
+          <p class="font-poppins text-white text-sm font-extralight">
+            35000 Rennes
           </p>
 
           <p class="font-poppins text-white text-sm font-extralight">
@@ -40,7 +43,7 @@
 
       <div class="mt-8">
         <p class="font-poppins text-center text-white font-extralight text-sm">
-          © 2022 Marie André. Tout droits réservés
+          © 2024 Marie André. Tout droits réservés
         </p>
       </div>
     </footer>

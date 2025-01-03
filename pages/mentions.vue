@@ -19,11 +19,13 @@
           <strong>Propriétaire du site :</strong> André Marie<br />
           <strong>Contact :</strong>
           m.andre.ergo@gmail.com <br />
-          <strong>Adresse :</strong> 27 Boulevard Emile Combes 35200 Rennes
+          <strong>Adresse :</strong> Cabinet Oberthur d'Esprit, 1 rue Raoul
+          Ponchon, 35000 Rennes
         </p>
         <p class="font-poppins text-normal font-extralight my-4">
           <strong>Identification de l'entreprise</strong> : André Marie - SIREN
-          : 905282091 - Adresse postale : 7 Boulevard Emile Combes 35200 Rennes
+          : 905282091 - Adresse postale : Cabinet Oberthur d'Esprit, 1 rue Raoul
+          Ponchon, 35000 Rennes
         </p>
         <p class="font-poppins text-normal font-extralight my-4">
           <strong>Hébergeur :</strong> OVH SAS - 2 rue Kellermann - BP 80157 -
