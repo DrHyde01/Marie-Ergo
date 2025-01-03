@@ -18,6 +18,7 @@
       action="/success/"
       data-netlify="true"
       netlify-honeypot="bot-field"
+      @submit.prevent="handleSubmit"
     >
       <input type="hidden" name="form-name" value="contact" />
       <label class="block mb-6">
@@ -129,6 +130,23 @@ export default {
       email: '',
       horaire: '',
     }
+  },
+  methods: {
+    handleSubmit(event) {
+      event.preventDefault()
+
+      const myForm = event.target
+      const formData = new FormData(myForm)
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString(),
+      })
+        .then(() => {
+          window.location.href = '/success/'
+        })
+        .catch((error) => alert(error))
+    },
   },
 }
 </script>
