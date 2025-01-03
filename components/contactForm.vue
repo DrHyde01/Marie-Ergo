@@ -62,6 +62,7 @@
         <label v-if="selected === 'Email'" class="block mb-6">
           <span class="text-gray-700">Email</span>
           <input
+            v-model="email"
             name="email"
             type="email"
             class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
@@ -74,6 +75,7 @@
           <label class="block mb-6">
             <span class="text-gray-700">Téléphone</span>
             <input
+              v-model="telephone"
               name="telephone"
               type="text"
               class="block w-full mt-1 p-2 border-gray-300 rounded-md shadow-sm focus:border-darkPurple-600 focus:ring focus:ring-darkPurple-600 focus:ring-opacity-50"
@@ -85,6 +87,7 @@
             <label for="horaire">Une heure à laquelle vous rappeler ?</label>
 
             <input
+              v-model="horaire"
               type="time"
               class="p-2"
               name="horaire"
@@ -122,6 +125,9 @@ export default {
   data() {
     return {
       selected: '',
+      telephone: '',
+      email: '',
+      horaire: '',
     }
   },
 }
