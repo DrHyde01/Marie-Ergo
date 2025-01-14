@@ -170,7 +170,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'ergotherapie, ergothérapeute, Rennes, accompagnement, adaptation, réadaptation',
+          'ergotherapie, ergothérapeute, ergothérapeute Rennes, accompagnement, adaptation, réadaptation, TSA, TND',
       },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {

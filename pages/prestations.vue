@@ -222,7 +222,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'ergotherapie, ergothérapeute, Rennes, évalutations, suivi, TSA, prestations',
+          'ergotherapie, ergothérapeute, ergothérapeute Rennes, ergothérapeute Ille-et-Vilaine, évalutations, suivi, TSA, prestations, TND',
       },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
