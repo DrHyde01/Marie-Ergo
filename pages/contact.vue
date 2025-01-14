@@ -23,7 +23,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'ergotherapie, ergothérapeute, Rennes, contact Ergothérapeute, rdv ergothérapeute, rdv bilans ergothérapeute, rdv évaluation ergothérapeute',
+          'ergotherapie, ergothérapeute Rennes, ergothérapeute Ille-et-Vilaine, contact Ergothérapeute, rdv ergothérapeute, rdv bilans ergothérapeute, rdv évaluation ergothérapeute, TSA, TND',
       },
     ],
   },

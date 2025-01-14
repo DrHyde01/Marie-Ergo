@@ -237,7 +237,7 @@ export default {
         hid: 'keywords',
         name: 'keywords',
         content:
-          'ergotherapie, ergothérapeute, ergothérapeute Rennes, ergothérapeute Ille-et-Vilaine',
+          'ergotherapie, ergothérapeute, ergothérapeute Rennes, ergothérapeute Ille-et-Vilaine, TSA, TND',
       },
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
